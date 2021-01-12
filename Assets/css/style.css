@@ -1,0 +1,7 @@
+.navbar-brand {
+    text-align: center;
+}
+.search-container,
+ .city-container {
+    margin:15px;
+}
