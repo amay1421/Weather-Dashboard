@@ -10,46 +10,89 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
-      <nav class="navbar navbar-dark bg-dark">
-        <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
-      </nav>
-      <br>      
-     <div class="search-container">
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-      <!-- <div class="card mb-3" style="max-width: 540px;">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <!--Nav title-->
+  <div class="bg-dark pt-2 pb-2"> 
+    <div class="container">
+        <h1 class="text-center text-white">Weather Dashboard</h1>
+    </div>
+</div>
+<!-- Search for a city-->
+      <div class ="container">
+          <div class="row">
+              <div class="col-sm-3 bg-light">
+                <h4>Search For A City:</h4>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control"id="search-city" aria-label="City Search" aria-describedby="search-button">
+                  <div class="input-group-append">
+                      <button class=" btn bg-primary text-light" id="search-button"><i class="fa fa-search"></i></button>
+                  </div>
+              </div>
+            </div>
+          <div class="col-sm-8">
+            <div class="row ml-2 border border-dark rounded">
+               <div class="col-sm-12" id="current-wx">
+                    <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                    <p>Temperature:<span class="current" id="temperature"></span></p>
+                    <p>Humidity:<span class="current" id="humidity"></span></p> 
+                    <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+                    <p>UV index:<span class="current bg-danger rounded py-2 px-2 text-white" id="uv-index"></span></p> 
             </div>
           </div>
-        </div>
-      </div> -->
-      <div class="city-container">
-        <div class="card" style="width: 18rem;">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+          </div>
 
-            </ul>
-      </div>
+
+
+
+
+
+
+          <!-- <div class="row">
+            <div class="container2">
+              <div class="row">
+                <div class="col-sm-3">
+                </div>
+                <div class="city-container">
+                  <div class="card" style="width: 18rem;">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Cras justo odio</li>
+                          <li class="list-group-item">Dapibus ac facilisis in</li>
+                          <li class="list-group-item">Vestibulum at eros</li>
+                          <li class="list-group-item">Vestibulum at eros</li>
+                          <li class="list-group-item">Vestibulum at eros</li>
+                          <li class="list-group-item">Vestibulum at eros</li>
+                          <li class="list-group-item">Vestibulum at eros</li>
+                          <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+                </div>
+                </div> -->
+          </div>
+
+        </div>
+
+
+
+    <!-- </div>
+    <div class="container2">
+      <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="city-container">
+          <div class="card" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+        </div> -->
+        </div>
     </div>
 
-
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Assets/js/script.js"></script>
 </body>
 </html>
