@@ -4,17 +4,6 @@ var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + 
 
 var savedCities = JSON.parse(localStorage.getItem('cityListNames')) || [];
 
-
-// // $.ajax({
-// //     url: queryURL,
-// //     method: "GET"
-// //   }).then(function (response) {
-  
-
-// });
-
-
-
 $("#search-button").on("click", function(event) {
     event.preventDefault();
     var cityName = $("#search-city").val().trim();
@@ -27,7 +16,6 @@ $("#search-button").on("click", function(event) {
         url: queryURL,
         method: "GET"
       }).then(function (response) {
-          console.log(response)
         //   Get Current city name
           var currentCity = $("#name")
           currentCity.text(response.name)
@@ -47,13 +35,11 @@ $("#search-button").on("click", function(event) {
           $("#wind-speed").append(currentWindspeed)
           // Get UV index
         })
-          
         var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=0d2a7f7bab7c452a6b8b48c2632901db"
         $.ajax({
             url: queryURL,
             method: "GET"
           }).then(function (response) {
-              console.log(response)
               //Get 5 Day Calendar dates
           var day1Date = $("#day1date")
           day1Date.text(response.list[2].dt_txt)
@@ -130,14 +116,9 @@ $("#search-button").on("click", function(event) {
         var day5Humidity = $("#humidity-day5")
         day5Humidity.text(response.list[34].main.humidity + "%")
         $("#humidity-day5").append(day5Humidity)
-
           })
           
   });
-
-
-
-
   for (let index = 0; index < savedCities.length; index++) {
     var List = $("#generatedList")
     var newItem = $("<li>")
@@ -153,17 +134,5 @@ $("#search-button").on("click", function(event) {
 //     localStorage.removeItem("cityListNames");
 //     document.location.reload();
 
-
-
-
-// function getWeather (cityName) {
-//     $.ajax({
-//         url: queryURL,
-//         method: "GET"
-//       }).then(function (response) {
-//     $('#fofrecast)'.empty()
-      
-    
-// });
 
 
