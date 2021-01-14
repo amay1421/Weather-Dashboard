@@ -130,7 +130,7 @@ $("#search-button").on("click", function(event) {
         var day5Humidity = $("#humidity-day5")
         day5Humidity.text(response.list[34].main.humidity + "%")
         $("#humidity-day5").append(day5Humidity)
-        
+
           })
           
   });
@@ -147,7 +147,11 @@ $("#search-button").on("click", function(event) {
   }
   
 
-
+// function clearHistory(event){
+//     event.preventDefault();
+//     savedCities=[];
+//     localStorage.removeItem("cityListNames");
+//     document.location.reload();
 
 
 
