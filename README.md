@@ -4,6 +4,6 @@ This weather dashboard allows users to type in a city of their choice and see cu
 
 ![Weather Dashboard](Weather-Dashboard.png)
 
-<strong>Repo Link:</strong>
+<strong>Repo Link:</strong> https://github.com/amay1421/Weather-Dashboard
 <br>
 <strong>Deployed Link:</strong>
